@@ -32,9 +32,8 @@ if ($fetch) {
     $insExec = $insert->execute([$email, $password, $name,$surname]);
 
     if ($insExec) { 
-        //$response['succes'] = true;
-        //$response['message'] = "Register successful";
-        $response['token']=
+        $response['succes'] = true;
+        $response['message'] = "Register successful";
         echo json_encode($response);
         exit;
     }
